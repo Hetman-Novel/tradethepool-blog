@@ -1,0 +1,78 @@
+.select {
+	font-family: 'Mona Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	position: relative;
+	width: 250px;
+	z-index: 3;
+}
+.select.is-active .select__header {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.select.is-active .select__icon {
+	transform: scale(1, -1);
+}
+
+.select__header {
+	align-items: center;
+	border: 1px solid #FF4D9E;
+	border-radius: 5px;
+	color: #000;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+	text-align: center;
+	z-index: 3;
+}
+.select__current {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -moz-box;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.select__icon {
+	align-items: center;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: center;
+	height: 38px;
+	text-align: center;
+	width: 29px;
+}
+
+.select__body {
+	background-color: #fff;
+	border: 1px solid #FF4D9E;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top: 0;
+	display: none;
+	left: 0;
+	overflow: hidden;
+	padding-bottom: 10px;
+	padding-top: 15px;
+	position: absolute;
+	right: 0;
+	top: 88%;
+	z-index: 0;
+}
+.select.is-active .select__body {
+	display: block;
+}
+.select__item {
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 6px 20px;
+}
+.select__item a {
+	
+	color: #000;
+}
